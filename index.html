@@ -26,6 +26,35 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="icon" type="image/png" href="favicon.png"> 
         
+        
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74048979-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+        
+        
+<script>
+/**
+* Function that tracks a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
+        
+        
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
  
 	
@@ -105,19 +134,19 @@
 			</div>
 			<div class="row to-animate">
 				<div class="col-md-4 col-sm-6 portfolio-project" data-animate-effect="fadeIn">
-					<a href="athome.html"><img src="images/work2.png" alt="AtHome" class="img-responsive">
+					<a href="athome.html" onclick="trackOutboundLink('https://www.chandanmahapatra.com/athome.html'); return false;"><img src="images/work2.png" alt="AtHome" class="img-responsive">
 						<h3>At Home</h3>
 						<span>Product Design</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-project" data-animate-effect="fadeIn">
-					<a href="noprocrastinator.html"><img src="images/work1.png" alt="NoProcrastinator" class="img-responsive">
+					<a href="noprocrastinator.html" onclick="trackOutboundLink('https://www.chandanmahapatra.com/noprocrastinator.html'); return false;"><img src="images/work1.png" alt="NoProcrastinator" class="img-responsive">
 						<h3>NoProcrastinator</h3>
 						<span>Mobile App Design</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-project" data-animate-effect="fadeIn">
-					<a href="wearemin.html"><img src="images/work3.png" alt="Wear-emin" class="img-responsive">
+					<a href="wearemin.html" onclick="trackOutboundLink('https://www.chandanmahapatra.com/wearemin.html'); return false;"><img src="images/work3.png" alt="Wear-emin" class="img-responsive">
                         <div class="work-heading">
 						<h3>Wear-emin</h3>
 						<span>IoT and Web Design</span>
@@ -188,7 +217,7 @@ I conduct Heuristic Evaluations and usability tests to figure out design problem
 			</div>
             <div class="resume row text-center">
                 <p>
-						<a href="https://drive.google.com/file/d/0B8Ca4gTiqe_6Rlhnb1VZWW1ac3M/view?usp=sharing" class="btn btn-primary hvr-grow">Résumé &nbsp;<i class="fa fa-cloud-download"></i></a>
+						<a href="https://drive.google.com/file/d/0B8Ca4gTiqe_6Rlhnb1VZWW1ac3M/view?usp=sharing" class="btn btn-primary hvr-grow">Résumé &nbsp;<i class="fa fa-cloud-download" onclick="trackOutboundLink('https://drive.google.com/file/d/0B8Ca4gTiqe_6Rlhnb1VZWW1ac3M/view?usp=sharing'); return false;"></i></a>
 					</p>
             </div>    
 		</div>
@@ -212,19 +241,19 @@ I conduct Heuristic Evaluations and usability tests to figure out design problem
                                   <a href="mailto:cm6463@rit.edu" class="btn-default btn-lg hvr-float-shadow"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Mail</span></a>
                                 </li>
                                 <li>
-                                  <a href="https://www.behance.net/chandan92" class="btn-default2 btn-lg hvr-float-shadow"><i class="fa fa-behance fa-fw"></i> <span class="network-name">Behance</span></a>
+                                  <a href="https://www.behance.net/chandan92" class="btn-default2 btn-lg hvr-float-shadow" onclick="trackOutboundLink('https://www.behance.net/chandan92'); return false;"><i class="fa fa-behance fa-fw"></i> <span class="network-name">Behance</span></a>
                                 </li>
                                 <li>
-                                  <a href="https://dribbble.com/chandan92" class="btn-default4 btn-lg hvr-float-shadow"><i class="fa fa-dribbble fa-fw"></i> <span class="network-name">Dribbble</span></a>
+                                  <a href="https://dribbble.com/chandan92" class="btn-default4 btn-lg hvr-float-shadow" onclick="trackOutboundLink('https://dribbble.com/chandan92'); return false;"><i class="fa fa-dribbble fa-fw"></i> <span class="network-name">Dribbble</span></a>
                                 </li>
                                 <li>
-                                  <a href="https://github.com/chandan-mahapatra" class="btn-default5 btn-lg hvr-float-shadow"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                  <a href="https://github.com/chandan-mahapatra" class="btn-default5 btn-lg hvr-float-shadow" onclick="trackOutboundLink('https://github.com/chandan-mahapatra'); return false;"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                                 </li>
                                 <li>
-                                  <a href="https://www.linkedin.com/in/chandanmahapatra" class="btn-default3 btn-lg hvr-float-shadow"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                                  <a href="https://www.linkedin.com/in/chandanmahapatra" class="btn-default3 btn-lg hvr-float-shadow" onclick="trackOutboundLink('https://www.linkedin.com/in/chandanmahapatra'); return false;"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                                 </li>
                                 <li>
-                                  <a href="https://twitter.com/chandan_1992" class="btn-default1 btn-lg hvr-float-shadow"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                                  <a href="https://twitter.com/chandan_1992" class="btn-default1 btn-lg hvr-float-shadow" onclick="trackOutboundLink('https://twitter.com/chandan_1992'); return false;"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                                 </li>
                       </ul>
                     </div>
