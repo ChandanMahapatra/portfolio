@@ -20,6 +20,9 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
+b {
+    color: #ED4332;
+}
 
 p {
   margin-bottom: 1.5em;
