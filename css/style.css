@@ -1085,6 +1085,36 @@ color: #646464;
 }
 
 .formSection {
-    margin-top: 360px;
-    
+    margin-top: 240px;
+    margin-bottom: 140px;
+}
+
+.formAttribute {
+    margin-bottom: 10px;
+}
+
+.formSection label {
+    margin: 8px;
+}
+
+.formSection .formItem  {
+    border-radius: 5px;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.formSection textarea {
+    border-radius: 5px;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 8px;
+    box-sizing: border-box;
 }

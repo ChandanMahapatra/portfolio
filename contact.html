@@ -64,10 +64,8 @@ var trackOutboundLink = function(url) {
 	<link rel="stylesheet" href="css/bootstrap.css">
     <!-- Font Awesome  -->    
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">    
-
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">    
-        
-	<link rel="stylesheet" href="css/style.css">    
+  
+	<link rel="stylesheet" href="css/style.css">  
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -93,7 +91,7 @@ var trackOutboundLink = function(url) {
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
 		            <li><a href="index.html" class="external"><span>Home</span></a></li>
-                    <li class="active"><a href="#" data-nav-section="athome"><span>At Home</span></a></li>
+                    <li class="active"><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
 		          </ul>
 		        </div>
 			    </nav>
@@ -102,79 +100,56 @@ var trackOutboundLink = function(url) {
      
         
    
-    <section id="portfolio" data-section="athome">    
+    <section id="portfolio" data-section="contact">    
     <div id="project-header">
 		<div class="container">
             <div class="row">
 			<div class="col-md-5 col-sm-5">
 				<div class="intro">
 					<h1 id="portfolio-logo" class="to-animate"><a href="#overview">Contact</a></h1>
-					<h2 class="to-animate">Want to get in touch?</h2>
+					<h2 class="to-animate">Send me a message</h2>
 				</div>
 			</div>
-			<div class="col-md-6 col-sm-6 text-center formSection">
-					<form action="https://send.pageclip.co/ymh7tmv5bplzWAXHOl7psJyQrkmnHkXD/contact-form" className="pageclip-form" method="post">
-
-                          <!-- text field -->
-                          <input type="text" name="name" value="Billy Jean" required />
-                          <input type="email" name="email" value="bob@omg.com" required />
-                          <input type="message" name="message" value="Hello there" required />
-
-                          <!-- hidden inputs -->
-                          <input type="hidden" name="version" value="v1" />
-                          <button class="pageclip-form__submit" type="button">
-                            <span>Submit</span>
-                          </button>
-                        </form>
+			<div class="col-md-6 col-sm-6 formSection">
+					<form action="https://formcarry.com/s/HkPKueEaW" method="POST" id="contactForm">
+                        <div class="row formAttribute">
+                            <div class="col-md-3 col-sm-3">
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                 <input class="formItem" type="name" name="name" id="name" required>
+                            </div>
+                        </div>
+                        <div class="row formAttribute">
+                            <div class="col-md-3 col-sm-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                 <input class="formItem" type="textarea" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="row formAttribute">
+                            <div class="col-md-3 col-sm-3">
+                                <label for="email">Message</label>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                 <textarea rows="3" cols="30" name="comment" form="contactForm">
+Enter your message</textarea>
+                            </div>
+                        </div>
+                        <div class="row text-right formAttribute">
+                            <div class="col-md-9 col-sm-9">
+                                <input id="submitForm" class="btn btn-primary" type="submit" value=Submit>
+                            </div>
+                        </div>
+                        
+                    </form>
 			</div>
             </div>
 		</div>
 	</div>
 </section>  
 
-<div id="overview" class="container" data-section="overview">
-			<div class="portfolio-overview">
-                <div class="row">
-				    <div class="col-md-5 col-md-offset-1">
-					<div class="portfolio-copy">
-						<div class="portfolio-copy-inner">
-							<h2>Overview</h2>
-                            <p>The At Home system can tie home appliances and electrical fixtures together so they perform as one unified digital system with the help of an intuitive user-interface. The process will be quick and simple. The aim of the system is to help users who might be intimidated by technology.</p>
-						</div>
-					</div>
-				    </div>
-                    <div class="col-md-5 other">
-							<h4>My Role</h4>
-                            <p>Interaction Design, User Research and Visual Design</p>
-							<h4>Team</h4>
-                            <p>Chandan, Rootwa, Sangram and Trina</p>
-							<h4>Tools</h4>
-                            <p>Illustrator, Invision and Photoshop</p>
-				    </div>
-                </div>
-                 <div class="row">
-                <div class="col-md-5 col-md-offset-1">
-					<div class="portfolio-copy">
-						<div class="portfolio-copy-inner">
-                             <h3>Problem</h3>
-                            <p>Home automation systems face four main challenges; these are the high cost of ownership, inflexibility, complex interface, and difficulty achieving security. The complex interface makes the system inaccessible and difficult to interact with people who might be technologically inept. </p>
-                </div>
-					</div>
-				</div>
-                 <div class="col-md-5">
-					<div class="portfolio-copy">
-						<div class="portfolio-copy-inner">
-                              <h3>Solution</h3>
-                            <p>The At Home system will be able control the entire home environment, ranging from lighting, thermostat settings to audio-visual playback is placed at the hands of the user. Users who are not tech-savvy will be able to use this system since it will be heavily influenced by real world interactions.</p>
-                </div>
-					</div>
-				</div> 
-                </div>     
-        </div>
-			<!-- END feature -->
-        </div>
-
-        
 
     <footer>
 			<div id="footer">
@@ -187,8 +162,6 @@ var trackOutboundLink = function(url) {
 				</div>
 			</div>
 		</footer>    
-        
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
         
     <!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
